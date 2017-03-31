@@ -13,9 +13,9 @@
   </head>
   <body>
     <a-scene>
-      <a-assets timeout="5000">
-		<img id="space" crossorigin="anonymous" src="https://www2.pic-upload.de/img/32932753/space_s.png">
-		<img id="earth" crossorigin="anonymous" src="https://www2.pic-upload.de/img/32932748/earth_s.jpg">
+      <a-assets>
+		<img id="space" crossorigin="anonymous" src="https://ucarecdn.com/c277030f-8877-4103-9fec-33af13145e3d/">
+		<img id="earth" crossorigin="anonymous" src="https://ucarecdn.com/a797cfca-4655-4bbe-beec-83f45805d9d4/">
         <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
         <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
@@ -39,19 +39,20 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#space">
+      <a-sky id="image-360" radius="20" src="#space">
 		<a-animation attribute="rotation"
-               dur="400000"
-               fill="forwards"
-               to="0 360 360"
+				begin="1"
+				dur="400000"
+				fill="forwards"
+               to="360 360 360"
                repeat="indefinite"></a-animation>
 	  </a-sky>
 
 	  <!-- Earth -->
-	  <a-sphere src="#earth" position="0 2 10" rotation="0 45 45" scale="1 1 1">
+	  <a-sphere src="#earth" position="2 1 -10" rotation="0 45 45" scale="1 1 1">
 		<a-animation attribute="rotation"
                dur="100000"
-               fill="forwards"
+               fill="both"
                to="0 360 0"
                repeat="indefinite"></a-animation>
 	  </a-sphere>
