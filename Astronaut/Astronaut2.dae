@@ -6,10 +6,10 @@
   </asset>
   <library_images>
     <image id="Image">
-      <init_from>file:///spacesuit_d.png</init_from>
+      <init_from>spacesuit_D.tga</init_from>
     </image>
     <image id="Image1">
-      <init_from>file:///spacesuit_d.png</init_from>
+      <init_from>spacesuit_D.tga</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -87,7 +87,7 @@
       </profile_COMMON>
       <extra>
         <technique profile="FCOLLADA">
-          <user_properties>spacesuit_d.png</user_properties>
+          <user_properties>spacesuit_D.tga</user_properties>
         </technique>
       </extra>
     </effect>
@@ -147,7 +147,7 @@
       </profile_COMMON>
       <extra>
         <technique profile="FCOLLADA">
-          <user_properties>spacesuit_d.png</user_properties>
+          <user_properties>spacesuit_D.tga</user_properties>
         </technique>
       </extra>
     </effect>
